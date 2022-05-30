@@ -6,7 +6,7 @@ from PIL import Image
 from pyrogram.types import Message
 from pyrogram import filters, Client
 
-from Zaid.main import bot as app
+from ALBY.main import bot as app
 from config import SUDO_USERS as SUDOERS
 
 @app.on_message(filters.command("speedtest") & ~filters.edited)
