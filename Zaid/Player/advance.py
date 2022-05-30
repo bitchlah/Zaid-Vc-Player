@@ -4,7 +4,7 @@ import sys
 import git
 import heroku3
 from ALBY.main import BOT
-from config import OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, ALIVE_IMG as ZAID_PIC
+from config import OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, ALIVE_IMG as ALBY_PIC
 from telethon.tl.functions.users import GetFullUserRequest
 # alive Pic By Default It's Will Show Our
 from telethon import events, version, Button
