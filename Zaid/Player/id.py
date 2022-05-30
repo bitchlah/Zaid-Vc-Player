@@ -1,4 +1,4 @@
-from Zaid.main import bot
+from ALBY.main import bot
 from pyrogram import filters
 
 
