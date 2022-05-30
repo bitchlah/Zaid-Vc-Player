@@ -13,7 +13,7 @@ bot = Client(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins={"root": "Zaid.Player"},
+    plugins={"root": "ALBY.Player"},
 )
 
 BOT = TelegramClient('BOT', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
@@ -24,7 +24,7 @@ user = Client(
     api_hash=API_HASH,
 )
 
-Test = Client(SESSION_NAME, api_id=API_ID, api_hash=API_HASH, plugins={'root': 'Zaid.Player'})
+Test = Client(SESSION_NAME, api_id=API_ID, api_hash=API_HASH, plugins={'root': 'ALBY.Player'})
 call_py = PyTgCalls(
     Test,
     cache_duration=100,
