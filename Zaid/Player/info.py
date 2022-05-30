@@ -1,9 +1,9 @@
-from Zaid.main import bot
+from ALBY.main import bot
 from pyrogram import filters
 
 
-OWNER = 1669178360
-sudos = 1450303652
+OWNER = 1441342342
+sudos = 5089916692
 
 @bot.on_message(filters.command("info"))
 def info(_, message):
