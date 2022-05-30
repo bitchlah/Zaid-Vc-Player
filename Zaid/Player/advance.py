@@ -3,7 +3,7 @@ import asyncio
 import sys
 import git
 import heroku3
-from Zaid.main import BOT
+from ALBY.main import BOT
 from config import OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, ALIVE_IMG as ZAID_PIC
 from telethon.tl.functions.users import GetFullUserRequest
 # alive Pic By Default It's Will Show Our
@@ -27,12 +27,12 @@ DEADLY += f"═══════════════════\n\n"
 @BOT.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 async def alive(event):
      await BOT.send_file(event.chat_id,
-                                  ZAID_PIC,
+                                  ALBY_PIC,
                                   caption=DEADLY,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Superior_Bots"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Superior_Support")
+        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/ruangprojects"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/ruangdiskusikami")
         ],
         [
         Button.url("• ʀᴇᴘᴏ •", "https://github.com/ITZ-ZAID/Zaid-Vc-Player")
