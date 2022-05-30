@@ -1,4 +1,3 @@
-# © SUPERIOR_BOTS
 import io
 from os import path
 from typing import Callable
@@ -9,17 +8,17 @@ import re
 from random import choice
 import aiofiles
 import aiohttp
-from Zaid.converter import convert
+from ALBY.converter import convert
 import ffmpeg
 import requests
-from Zaid.fonts import CHAT_TITLE
+from ALBY.fonts import CHAT_TITLE
 from PIL import Image, ImageDraw, ImageFont
 from config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5, UPDATES_CHANNEL, GROUP_SUPPORT
-from Zaid.filters import command, other_filters
-from Zaid.queues import QUEUE, add_to_queue
-from Zaid.main import call_py, Test as user
-from Zaid.utils import bash
-from Zaid.main import bot as Client
+from ALBY.filters import command, other_filters
+from ALBY.queues import QUEUE, add_to_queue
+from ALBY.main import call_py, Test as user
+from ALBY.utils import bash
+from ALBY.main import bot as Client
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls import StreamType
@@ -28,7 +27,7 @@ from youtubesearchpython import VideosSearch
 import yt_dlp
 import yt_dlp
 
-ZAID_IMGS = [
+ALBY_IMGS = [
     "Process/ImageFont/LightGreen.png",
     "Process/ImageFont/Red.png",
     "Process/ImageFont/Black.png",
@@ -109,7 +108,7 @@ async def generate_cover(thumbnail, title, userid, ctitle):
                 await f.write(await resp.read())
                 await f.close()
     image1 = Image.open(f"thumb{userid}.png")
-    images = choice(ZAID_IMGS)
+    images = choice(ALBY_IMGS)
     image2 = Image.open(images)
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
