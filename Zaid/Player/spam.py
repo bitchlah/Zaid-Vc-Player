@@ -1,11 +1,9 @@
-# Own
-
 from pyrogram.types import Message
 import asyncio
 import asyncio
 from config import SUDO_USERS
 from pyrogram import filters
-from Zaid.main import bot as Client
+from ALBY.main import bot as Client
 
 @Client.on_message(filters.command('delspam'))
 async def statspam(client: Client, message: Message):
