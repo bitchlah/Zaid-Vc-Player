@@ -1,11 +1,11 @@
-from Zaid.Cache.admins import admins
-from Zaid.main import call_py
+from ALBY.Cache.admins import admins
+from ALBY.main import call_py
 from pyrogram import filters
-from Zaid.main import bot as Client
-from Zaid.decorators import authorized_users_only
-from Zaid.filters import command, other_filters
-from Zaid.queues import QUEUE, clear_queue
-from Zaid.utils import skip_current_song, skip_item
+from ALBY.main import bot as Client
+from ALBY.decorators import authorized_users_only
+from ALBY.filters import command, other_filters
+from ALBY.queues import QUEUE, clear_queue
+from ALBY.utils import skip_current_song, skip_item
 from config import BOT_USERNAME, GROUP_SUPPORT, IMG_3, UPDATES_CHANNEL
 from pyrogram.types import (
     CallbackQuery,
