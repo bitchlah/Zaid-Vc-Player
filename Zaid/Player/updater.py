@@ -1,6 +1,3 @@
-
-
-
 import os
 import sys
 
@@ -10,12 +7,12 @@ from git.exc import InvalidGitRepositoryError
 
 from pyrogram.types import Message
 from pyrogram import filters
-from Zaid.main import bot as Client
+from ALBY.main import bot as Client
 
 from config import UPSTREAM_REPO, BOT_USERNAME
 
-from Zaid.filters import command
-from Zaid.decorators import sudo_users_only
+from ALBY.filters import command
+from ALBY.decorators import sudo_users_only
 
 
 def gen_chlog(repo, diff):
